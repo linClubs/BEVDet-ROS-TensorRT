@@ -1,8 +1,9 @@
 
 # BEVDet by TensorRT, C++, ROS
 
-This repository contains source code and models for BEVDet online real-time inference using CUDA, TensorRT, ROS1 & C++.
++ This repository contains source code and models for BEVDet online real-time inference using CUDA, TensorRT, ROS1 & C++.
 
++ Modify the record reference [modify](https://github.com/linClubs/BEVDet-ROS-TensorRT/tree/main/doc/modify.md)
 
 # 1 ENV
 
@@ -22,11 +23,24 @@ source devel/setup.bash
 
 # 4 Run
 
-Generate the TensorRT engine reference to [bevdet-tensorrt-cpp](https://github.com/LCH1238/bevdet-tensorrt-cpp)
+1. generate engine
 
-The rosbag folder can be downloaded from [Google drive]() or [Baidu Netdisk]()
+Generate the onnx TensorRT engine reference to [bevdet-tensorrt-cpp](https://github.com/LCH1238/bevdet-tensorrt-cpp)  engine path as follows.
 
 
+~~~python
+# engine path
+BEVDet-ROS-TensorRT
+    └──ckpts
+        ├── bev_stage_lt_d.engine
+        ├── img_stage_lt_d.engine
+        └── lt_d.yaml
+~~~
+
+2. data preparation
+The rosbag folder can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1XIoWetqX0qcRwDtjv7V3Dg)
+
+3. run
 ~~~python
 
 # 1. start bevdet_node
@@ -36,12 +50,18 @@ roslaunch bevdet bevdet_node.launch
 rosbag play nus.bag
 ~~~
 
-
-
-
+---
 
 ## References
 - [bevdet-tensorrt-cpp](https://github.com/LCH1238/bevdet-tensorrt-cpp)
 - [BEVDet](https://github.com/HuangJunJie2017/BEVDet)
 - [mmdetection3d](https://github.com/open-mmlab/mmdetection3d)
 - [nuScenes](https://www.nuscenes.org/)
+
+- bev感知交流群-472648720, 欢迎各位小伙伴进群一起学习讨论bev相关知识！！！^_^
+
+<p align="center">
+  <img src="./doc/1.jpg" width="200" height="200" />
+</p>
+
+---
