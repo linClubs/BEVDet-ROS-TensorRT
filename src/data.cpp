@@ -16,7 +16,8 @@ using std::chrono::duration;
 camParams::camParams(const YAML::Node &config, int n, std::vector<std::string> &cams_name) :
                                                                     N_img(n){
     
-    if((size_t)n != cams_name.size()){
+    if((size_t)n != cams_name.size())
+    {
         std::cerr << "Error! Need " << n << " camera param, bug given " << cams_name.size() << " camera names!" << std::endl;
     }
     ego2global_rot = fromYamlQuater(config["ego2global_rotation"]);
@@ -34,7 +35,8 @@ camParams::camParams(const YAML::Node &config, int n, std::vector<std::string> &
     cams2ego_rot.clear();
     cams2ego_trans.clear();
     
-    for(std::string name : cams_name){
+    for(std::string name : cams_name)
+    {
         imgs_file.push_back("." + config["cams"][name]["data_path"].as<std::string>());
 
         //

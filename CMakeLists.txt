@@ -27,8 +27,6 @@ elseif(${CMAKE_HOST_SYSTEM_PROCESSOR} STREQUAL "x86_64")
   set(TENSORRT_LIBRARY_DIRS ~/software/TensorRT-8.5.3.1/lib)
 endif()
 
-
-
 find_library(NVJPEG_LIBRARY nvjpeg ${CUDA_LIB_DIRS})
 if(NVJPEG_LIBRARY)
   add_definitions(-D__HAVE_NVJPEG__)
@@ -83,9 +81,8 @@ link_directories(
 
 # ------------------
 
-cuda_add_executable(ros_node
+cuda_add_executable(bevdet_node
     test_ros/bevdet_ros.cpp
-    
     src/bevdet.cpp 
     src/preprocess.cu 
     src/bevpool.cu 
@@ -97,7 +94,7 @@ cuda_add_executable(ros_node
     src/nvjpegdecoder.cpp
 )
 
-target_link_libraries(ros_node
+target_link_libraries(bevdet_node
     yaml-cpp 
     libnvinfer.so
     libjpeg.so
