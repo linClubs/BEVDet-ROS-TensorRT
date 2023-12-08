@@ -38,7 +38,7 @@ BEVDet-ROS-TensorRT
 ~~~
 
 2. data preparation
-The rosbag folder can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1XIoWetqX0qcRwDtjv7V3Dg)
+The rosbag folder can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1f3nUnHa_4cd6FsRTV8YhkA?pwd=rjim)
 
 3. run
 ~~~python
@@ -49,6 +49,11 @@ roslaunch bevdet bevdet_node.launch
 # 2  play data
 rosbag play nus.bag
 ~~~
+
+<p align="center">
+  <img src="./doc/1.png" width="800" height="720" />
+</p>
+
 
 ---
 

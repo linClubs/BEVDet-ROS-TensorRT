@@ -1,5 +1,5 @@
 <launch>
-    <param name="score_thre" type="double" value="0.25" />
+    <param name="score_thre" type="double" value="0.4" />
 
     <!-- ros topic name -->
     <param name="topic_cloud"  type="string" value="/lidar_top" />
@@ -23,7 +23,8 @@
     <!-- bevdet node -->
     <node pkg="bevdet" name="bevdet_node" type="bevdet_node" output="screen" />
     
-    <!-- rviz -->
+    <!-- rviz bevdet.rviz 2.rviz-->
     <node pkg="rviz" name ="bevdet_node_rviz" type="rviz"
-        respawn="false" output="screen" args="-d $(find bevdet)/rviz/bevdet.rviz"/>
+        respawn="false" output="screen" args="-d $(find bevdet)/rviz/2.rviz"/>
+
 </launch>
