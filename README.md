@@ -12,7 +12,7 @@
 
 # 1 ENV
 
-- **ubuntu-20.0、CUDA-11.3、cuDNN-8.6.0、TensorRT-8.5**
+- **ubuntu-20.04、CUDA-11.3、cuDNN-8.6.0、TensorRT-8.5**
 - **yaml-cpp、Eigen3、libjpeg**
 
 # 3 Build

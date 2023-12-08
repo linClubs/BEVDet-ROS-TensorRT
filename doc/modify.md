@@ -1,4 +1,6 @@
 
+# BEVDet-ROS-TensorRT
+
 + 本工程是基于[bevdet-tensorrt-cpp](https://github.com/LCH1238/bevdet-tensorrt-cpp)魔改
 + 为了快速实现ros版本，只修改了`/test/demo_bevdet.cpp`中的`TestSample`函数
 + 仅将`TestSample`改成ros回调函数，导致代码很乱,可读性比较差, 比如读取参数实现方式不统一, 类只封装了推理函数等问题
@@ -17,7 +19,7 @@ git clone https://github.com/linClubs/BEVDet-ROS-TensorRT.git
 
 2. onnx2engine
 
-The onnx folder can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1DmAoUPYywe9o4in6nH26Xg)
+The onnx folder can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1NGUd6PphfcceHYQ1iKVxog?pwd=f937)
 
 
 ~~~python
@@ -44,15 +46,15 @@ roslaunch bevdet bevdet_node.launch
 rosbag play nus.bag
 ~~~
 
-+ 测试数据建议直接下载[Baidu Netdisk](https://pan.baidu.com/s/1XIoWetqX0qcRwDtjv7V3Dg)rosbag包, 经本人生成的包，稳的1p。
++ 测试数据建议直接下载[Baidu Netdisk](https://pan.baidu.com/s/1f3nUnHa_4cd6FsRTV8YhkA?pwd=rjim)rosbag包, 经本人生成的包，稳的1p。
 
 ---
 
 # 3 传感器实时数据
 
-+ **一定要标定**（相机内参， 雷达到相机的外参）, 不然置极低。
++ **一定要标定**（相机内参， 雷达到相机的外参）, 不然置信度极低
 + **一定要训练模型** 自己场景数据需要重新训练模型
-+ 传感器数据直接通过ros发布, 就能实时接本工程上车。
++ 传感器数据直接通过ros发布, 就能实时接本工程并上车
 
 # 4 待提升
 1. 图像传输可以压缩
@@ -66,7 +68,7 @@ rosbag play nus.bag
 
 ---
 
-+ bev感知交流群-472648720, 欢迎各位小伙伴进群一起学习讨论bev相关知识！！！^_^
++ bev感知交流Q群-472648720, 欢迎各位小伙伴进群一起学习讨论bev相关知识！！！^_^
 
 <p align="center">
   <img src="1.jpg" width="200" height="200" />
