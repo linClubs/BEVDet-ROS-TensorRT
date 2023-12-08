@@ -15,7 +15,7 @@
 - **ubuntu-20.04、CUDA-11.3、cuDNN-8.6.0、TensorRT-8.5**
 - **yaml-cpp、Eigen3、libjpeg**
 
-# 3 Build
+# 2 Build
 
 ~~~python
 mkdir -p bev_ws/src
@@ -26,7 +26,7 @@ catkin_make
 source devel/setup.bash
 ~~~
 
-# 4 Run
+# 3 Run
 
 1. generate engine
 
@@ -62,7 +62,7 @@ rosbag play nus.bag
 
 ---
 
-## References
+# References
 - [bevdet-tensorrt-cpp](https://github.com/LCH1238/bevdet-tensorrt-cpp)
 - [BEVDet](https://github.com/HuangJunJie2017/BEVDet)
 - [mmdetection3d](https://github.com/open-mmlab/mmdetection3d)
