@@ -25,6 +25,6 @@
     
     <!-- rviz bevdet.rviz 2.rviz-->
     <node pkg="rviz" name ="bevdet_node_rviz" type="rviz"
-        respawn="false" output="screen" args="-d $(find bevdet)/rviz/2.rviz"/>
+        respawn="false" output="screen" args="-d $(find bevdet)/rviz/bevdet.rviz"/>
 
 </launch>

@@ -1,6 +1,11 @@
 
 # BEVDet by TensorRT, C++, ROS
 
+<p align="center">
+  <img src="./doc/1.gif" width="375" height="338" />
+</p>
+
+
 + This repository contains source code and models for BEVDet online real-time inference using CUDA, TensorRT, ROS1 & C++.
 
 + Modify the record reference [modify](https://github.com/linClubs/BEVDet-ROS-TensorRT/tree/main/doc/modify.md)
