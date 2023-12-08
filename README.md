@@ -40,7 +40,7 @@ BEVDet-ROS-TensorRT
 2. data preparation
 The rosbag folder can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1f3nUnHa_4cd6FsRTV8YhkA?pwd=rjim)
 
-3. run
+3. demo test
 ~~~python
 
 # 1. start bevdet_node
